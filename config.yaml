@@ -46,7 +46,7 @@ monitors:
 
   - id: rotaractmora-mun
     name: Rotaract Mora MUN
-    url: 'http://mun.rotaractmora.org/'
+    url: 'https://mun.rotaractmora.org/'
     method: GET
     expectStatus: 200
 
@@ -95,7 +95,7 @@ monitors:
 
   - id: cast4
     name: CAST4 Website
-    url: 'http://cast4.rotaractmora.org/'
+    url: 'https://cast4.rotaractmora.org/'
     method: GET
     expectStatus: 200
 
