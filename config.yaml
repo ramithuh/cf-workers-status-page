@@ -1,9 +1,9 @@
 settings:
-  title: 'Rotaract Mora | Cyber Status Page'
+  title: 'Rotaract Mora | Cyber Status'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 30 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  collectResponseTimes: true # collects avg response times from CRON locations  
 
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
@@ -101,6 +101,7 @@ monitors:
 
   - id: datastorm
     name: DataStorm Website
-    url: 'https://data-storm.web.app'
+    url: 'https://datastorm.rotaract.social'
     method: GET
+    followRedirect: true
     expectStatus: 200
