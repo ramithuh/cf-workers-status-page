@@ -44,8 +44,16 @@
     @apply bg-green-400 dark:bg-green-700;
   }
 
+  .bar.green-light {
+    background-color: #557b17;
+  }
+
   .bar.red {
     @apply bg-red-400 dark:bg-red-700;
+  }
+
+  .bar.yellow-light {
+    background-color: #7e7100;
   }
 
   .bar.yellow {

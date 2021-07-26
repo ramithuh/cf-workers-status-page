@@ -20,15 +20,20 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
 
         // filter all dates before first check, then check the rest
         if (kvMonitor && kvMonitor.firstCheck <= dayInHistogram) {
-          if (
-            kvMonitor.checks.hasOwnProperty(dayInHistogram) &&
-            kvMonitor.checks[dayInHistogram].fails > 0
-          ) {
-            bg = 'yellow'
-            dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperational}`
-          } else {
-            bg = 'green'
-            dayInHistogramLabel = config.settings.dayInHistogramOperational
+          if (kvMonitor.checks.hasOwnProperty(dayInHistogram)) {
+            if (kvMonitor.checks[dayInHistogram].fails > 4) {
+              bg = 'yellow'
+              dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperational}`
+            } else if (kvMonitor.checks[dayInHistogram].fails > 2) {
+              bg = 'yellow-light'
+              dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperational}`
+            } else if (kvMonitor.checks[dayInHistogram].fails > 0) {
+              bg = 'green-light'
+              dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperational}`
+            } else {
+              bg = 'green'
+              dayInHistogramLabel = config.settings.dayInHistogramOperational
+            }
           }
         }
 
