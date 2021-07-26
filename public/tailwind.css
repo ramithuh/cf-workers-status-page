@@ -45,6 +45,10 @@
   }
 
   .bar.green-light {
+    background-color: #8edd57;
+  }
+
+  .dark .bar.green-light {
     background-color: #557b17;
   }
 
@@ -53,6 +57,10 @@
   }
 
   .bar.yellow-light {
+    background-color: #c5d72f;
+  }
+
+  .dark .bar.yellow-light {
     background-color: #7e7100;
   }
 
