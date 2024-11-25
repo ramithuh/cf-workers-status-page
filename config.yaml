@@ -49,7 +49,7 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: mlsb_bluesky_feed
+  - id: mlsb
     name: mlsb.ramith.io
     description: 'MLSB Bluesky Feed (Machine Learning in Structural Biology)'
     url: 'http://mlsb.ramith.io'
