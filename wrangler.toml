@@ -1,5 +1,6 @@
 name = "cf-workers-status-page"
 workers_dev = true
+main = "index.js"
 compatibility_date = "2021-07-23"
 
 [triggers]
@@ -8,7 +9,6 @@ crons = ["*/5 * * * *"]
 [site]
 bucket = "out"
 
-main = "index.js"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
