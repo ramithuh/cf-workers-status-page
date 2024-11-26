@@ -1,8 +1,6 @@
 name = "cf-workers-status-page"
 workers_dev = true
 main = "index.js"
-type = "webpack"
-webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
 
 [triggers]
