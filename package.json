@@ -5,6 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "flareact dev",
     "build": "yarn css && flareact build && rollup -c",
