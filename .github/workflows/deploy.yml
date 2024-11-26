@@ -17,8 +17,9 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: 16
-    - run: yarn install
-           @rollup/plugin-yaml
+    - run: |
+        yarn install
+        yarn add @rollup/plugin-yaml --dev
     - run: yarn build
       env:
         NODE_ENV: production
