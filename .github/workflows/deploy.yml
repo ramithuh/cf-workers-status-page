@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: 16
     - run: yarn install
-           yarn add -D @rollup/plugin-yaml
+           yarn add @rollup/plugin-yaml --dev
     - run: yarn build
       env:
         NODE_ENV: production
