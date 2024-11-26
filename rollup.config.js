@@ -1,10 +1,10 @@
-import yaml from '@rollup/plugin-yaml';
+const yaml = require('@rollup/plugin-yaml');
 
-export default {
+module.exports = {
   input: './src/functions/cronTrigger.js',
   output: {
     dir: 'dist',
     format: 'es'
   },
   plugins: [yaml()]
-}
+};
