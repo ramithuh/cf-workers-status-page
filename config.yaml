@@ -23,6 +23,13 @@ monitors:
   #   expectStatus: 200 # operational status, default=200
   #   followRedirect: false # should fetch follow redirects, default=false
   #   linkable: false # allows the title to be a link, default=true
+  - id: mlsb
+    name: Bluesky.MLSB
+    description: 'MLSB Bluesky Feed (Machine Learning in Structural Biology)'
+    url: 'http://mlsb.ramith.io'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
 
   - id: labs
     name: labs.ramith.io
@@ -45,14 +52,6 @@ monitors:
     name: selex.ramith.io
     description: 'SELEX.'
     url: 'http://selex.ramith.io'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-
-  - id: mlsb
-    name: mlsb.ramith.io
-    description: 'MLSB Bluesky Feed (Machine Learning in Structural Biology)'
-    url: 'http://mlsb.ramith.io'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
